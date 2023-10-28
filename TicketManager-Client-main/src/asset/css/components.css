@@ -1,0 +1,40 @@
+/* Login bar */
+.logined-bar {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.logined-bar i {
+  font-size: 1rem;
+}
+
+.logined-bar .notify {
+  margin: 0 15px;
+}
+
+.logined-bar .setting {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile__avatar img {
+  width: 35px;
+}
+
+.profile__avatar {
+}
+.profile__name {
+  margin: 0 10px;
+  font-size: 1rem;
+}
+.profile .profile__btn-down i {
+  font-size: 0.8rem;
+}
