@@ -104,6 +104,7 @@ export const fetchDataDetailTrip = createAsyncThunk(
       const url = `${apiUrl}/wagonTicket/getAllByidTrip`;
 
       const { data } = await axios.post(url, payload);
+      
       return data;
     } catch (err) {
       return thunkAPI.rejectWithValue(err);

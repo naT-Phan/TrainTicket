@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "moment/locale/zh-cn";
 import locale from "antd/es/date-picker/locale/zh_CN";
 import { DatePicker } from "antd";
-import "antd/dist/antd.css";
+import 'antd/dist/antd.min.css';
 import "./mainPage.scss";
 import moment from "moment";
 import "moment/locale/zh-cn";
@@ -165,7 +165,7 @@ const MainPage = () => {
             <div className="flex content-center 2xl:gap-10 sm:gap-2 lg:border-b-gray-[#ccc] lg:border-b-2 ">
               <div className="flex  2xl:gap-3 lg:gap-2 text-lg leading-7 pr-1 mr-2  pb-3 cursor-pointer custom-border-b">
                 <i class="fa-solid fa-bus text-base"></i>
-                <span className="">Bus</span>
+                <span className="">Train</span>
               </div>
               <div className=" 2xl:gap-3 lg:gap-2 text-lg leading-7 pr-1 mr-2 opacity-40 cursor-pointer hidden">
                 <i class="fa-solid fa-cart-flatbed text-base"></i>

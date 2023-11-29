@@ -6,7 +6,7 @@ import { userSelector } from "../../redux/authSelector";
 import UserGuest from "./UserGuest";
 import { UserLogin } from "./UserLogined";
 
-const logo = require("../../asset/img/logoOfficial2.png");
+const logo = require("../../asset/img/logo.jpg");
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);

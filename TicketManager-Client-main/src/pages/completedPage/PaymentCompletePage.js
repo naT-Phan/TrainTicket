@@ -83,7 +83,7 @@ const PaymentCompletePage = () => {
               <div className="flex items-center gap-1 justify-between">
                 <div className="opacity-70 sm:text-sm ">Tổng tiền</div>
                 <div className="opacity-100 sm:text-sm  font-bold text-right">
-                  1.340.000 vnd
+                  900.000 vnd
                 </div>
               </div>
             </div>

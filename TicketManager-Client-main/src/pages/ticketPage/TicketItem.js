@@ -74,19 +74,20 @@ const TicketItem = ({ data }) => {
               </span>
               <div className="flex items-center flex-col gap-1 text-sm lg:ml-14 ssm:ml-4 ">
                 <span className="time-start font-bold">
-                  {handleTimeTicket(data.s)}
+                  {handleTimeTicket(data.startTime)}
                 </span>
                 <span className=""> {start}</span>
               </div>
               <div className="flex flex-col gap-1 items-center text-sm">
                 <div className="w-[100px] border-dotted border-b-2"></div>
                 <span>
-                  {handleTimeTicketMinutes(Math.abs(data.e - data.s))}h
+                  {/* {handleTimeTicketMinutes(Math.abs(data.e - data.s))}h */}
+                  {data.totalTime}h
                 </span>
               </div>
               <div className="flex  items-center flex-col gap-1 text-sm mr-6">
                 <span className="time-start font-bold">
-                  {handleTimeTicket(data.e)}
+                  {handleTimeTicket(data.startTime + data.totalTime)}
                 </span>
                 <span> {end}</span>
               </div>

@@ -109,9 +109,9 @@ const TickeChoosing = ({ type, handleContinue, enableContinue }) => {
           {wagonBooking.listUserTicket.map((item, ind) => {
             if (ind === 0) totalMoney = 0;
             let itemMoney =
-              item.price *
-              Math.abs(start - end) *
-              (1 - calculateDiscount(item.typeTicket));
+              item.price ;
+              // Math.abs(start - end) *
+              // (1 - calculateDiscount(item.typeTicket));
             totalMoney += itemMoney;
             return (
               <ItemSeatDetail

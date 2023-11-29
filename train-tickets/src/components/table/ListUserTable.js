@@ -46,13 +46,13 @@ export const ListUserTable = (props) => {
           <td>
             {user.firstName} {user.lastName}
           </td>
-          <td>
+          {/* <td>
             {user.profile[0].gender
               ? user.profile[0].gender === "Male"
                 ? "Nam"
                 : "Nữ"
               : "Trống"}
-          </td>
+          </td> */}
           <td>{user.email}</td>
           <td>{user.contactNumber}</td>
           <td>

@@ -15,14 +15,13 @@ const TicketAvailableList = () => {
           <div className="w-8 h-8 rounded-full border-4 border-primary border-r-transparent animate-spin"></div>
         </div>
       )}
-
       {!isLoading &&
-        ticketAvailables?.length > 0 &&
-        [...ticketAvailables].reverse().map((item, ind) => {
+        ticketUseds?.length > 0 &&
+        [...ticketUseds].reverse().map((item, ind) => {
           return <ItemTicket ind={ind} data={item} key={ind} />;
         })}
 
-      {!isLoading && ticketAvailables?.length <= 0 && <NoneTicketAvailable />}
+      {!isLoading && ticketUseds?.length <= 0 && <NoneTicketAvailable />}
     </Fragment>
   );
 };

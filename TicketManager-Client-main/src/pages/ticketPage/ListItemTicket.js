@@ -9,6 +9,7 @@ const ListItemTicket = () => {
 
   const [type, setType] = useState(1);
   console.log(trip);
+  
   return (
     <div className="bg-transparent dark:!text-white dark:!bg-dark_primary_bg w-full h-full min-h-[800px] flex flex-col gap-4 ">
       <div className=" min-h-[60px] rounded-lg bg-white dark:!bg-dark_primary_pnl  flex justify-between items-center pl-6 mb-1">

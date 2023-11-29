@@ -84,6 +84,14 @@ export const RouteDetails = (props) => {
     }
   };
 
+<<<<<<< Updated upstream:train-tickets/src/containers/RouteDetails/index.js
+=======
+    // const returnNameLocation = (indexLocation) => {
+    //   if (indexLocation == 0) return "Hà Nội";
+    //   else if (indexLocation == 168) return "Sài Gòn";
+    //   return "";
+    // };
+>>>>>>> Stashed changes:TicketManager-Admin-Client-main/src/containers/RouteDetails/index.js
   const returnNameLocation = (indexLocation) => {
     if (indexLocation == 0) return "Hà Nội";
     else if (indexLocation == 168) return "Sài Gòn";

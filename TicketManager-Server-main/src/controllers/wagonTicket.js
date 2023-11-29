@@ -72,24 +72,33 @@ exports.getAllByIdTrip = async (req, res) => {
     let payload = [];
 
     const wagonTickets = await WagonTicket.find();
+    
 
     const { idTrip, startIndex, endIndex } = req.body;
+
+    
 
     const wagon = await Wagon.find();
 
     const trip = await Trip.findOne({ _id: idTrip });
+    
+    
 
     const ticket = await Ticket.findOne({ idTrip: trip._id });
-
+    
     const seats = await Seat.find();
+    
     const vehicals = await Vehicle.find();
-
+    
     const cusTickets = await cusTicket.find();
 
     if (ticket) {
-      const filteredWagonTickets = wagonTickets.filter(wagonTickets => {
-        return wagonTickets.idTicket.equals(ticket._id);
+
+      const filteredWagonTickets = wagonTickets.filter(wagonTicket => {
+
+        return wagonTicket.idTicket.equals(ticket._id);
       });
+      console.log(filteredWagonTickets);
 
       filteredWagonTickets.map(wagonTicket => {
         const filteredSeats = seats.filter(seat => {
@@ -135,25 +144,31 @@ exports.getAllByIdTrip = async (req, res) => {
             }
           }
         });
+        console.log(wagon);
+
         let wagonType = '';
         for (let w of wagon) {
           if (wagonTicket.wagon.equals(w._id)) wagonType = w.idWagon;
         }
 
         let currentVehical = '';
+        console.log(vehicals);
         for (let v of vehicals) {
           if (trip.idVehicle.equals(v._id)) currentVehical = v.idTrain;
         }
 
         payload.push({ ...wagonTicket._doc, filteredSeats, wagonType, currentVehical });
+        
       });
+     
       res.status(200).json(payload);
+      
     } else {
       res.status(500).json('Not Found');
     }
   } catch (err) {
     res.status(500).json({ error: err });
-    // console.log(err)
+    console.log(err)
   }
 };
 

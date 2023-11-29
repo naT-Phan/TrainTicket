@@ -97,7 +97,9 @@ const ModalTicketDetail = ({ closeModal, setIsChange, data, type }) => {
                     </div>
                   </div>
                 </div>
+                  
               </div>
+              
             </div>
           </div>
 

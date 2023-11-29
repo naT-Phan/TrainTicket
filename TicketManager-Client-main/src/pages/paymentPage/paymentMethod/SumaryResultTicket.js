@@ -69,7 +69,7 @@ const SumaryResultTicket = () => {
     const currentListMoney = [];
     let sum = 0;
     for (let i of wagonBooking.listUserTicket) {
-      const moneyTicket = i.price * Math.abs(startIndex - endIndex);
+      const moneyTicket = i.price ;
       sum += moneyTicket;
       currentListMoney.push(moneyTicket);
     }
