@@ -6,6 +6,7 @@ Các chức năng phía người dùng:
 -	Thanh toán vé tàu
 -	Tra cứu thông tin, quản lý vé tàu
 -	Liên hệ với website
+
 Các chức năng phía quản lý
 -	Đăng nhập tài khoản quản lý
 -	Quản lý tài khoản khách hàng
